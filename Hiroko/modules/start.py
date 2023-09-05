@@ -18,13 +18,13 @@ from Hiroko.modules.text import SHORTENER_TEXT, ADMINS_TEXT, GITHUB_TEXT, FUN_TE
 # ------------------------------------------------------------------------------- #
 
 START_IMG = (
-"https://graph.org/file/f035f0e34969c14ae2e8c.jpg",
+"https://graph.org/file/4c9ceb15e23d3324a4cfb.mp4",
 "https://graph.org/file/68227791cf9273fbede7a.jpg",
-"https://graph.org/file/d91ec80b019d43082965d.jpg",
+"https://graph.org/file/4c9ceb15e23d3324a4cfb.mp4",
 "https://graph.org/file/d6ae49af114fa50d5ba89.jpg",
-"https://graph.org/file/30f6cc0b6251afe5c4153.jpg",
+"https://graph.org/file/4c9ceb15e23d3324a4cfb.mp4",
 "https://telegra.ph/file/0214edaebad6ef6d69c1d.jpg",
-"https://telegra.ph/file/f658925a255bea26efaa4.jpg",
+"https://graph.org/file/4c9ceb15e23d3324a4cfb.mp4",
 "https://telegra.ph/file/235e4c7e9dd0c48bac638.jpg",
 
 )
@@ -93,7 +93,7 @@ back_buttons  = [[
 
 # ------------------------------------------------------------------------------- #
 
-@Hiroko.on_message(filters.command(["start"], prefixes=["/", "!"]))
+@Hiroko.on_message(filters.command(["q"], prefixes=["/", "!"]))
 async def start(client: Client, message: Message):    
         get_me = await client.get_me()
         BOT_USERNAME = get_me.username
@@ -102,8 +102,8 @@ async def start(client: Client, message: Message):
                 InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
             ],
             [
-                InlineKeyboardButton("✨ sᴜᴘᴘᴏʀᴛ ✨", url="https://t.me/TheNixaSupport"),
-                InlineKeyboardButton("🎓 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url=f"https://t.me/AnonDeveloper"),
+                InlineKeyboardButton("✨ sᴜᴘᴘᴏʀᴛ ✨", url="https://t.me/The_Caption_XD"),
+                InlineKeyboardButton("🎓 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url=f"https://t.me/lover_jerry"),
             ],
             [
                 InlineKeyboardButton("📚 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs 📚", callback_data="help_")
@@ -129,8 +129,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
             ],
             [
-                InlineKeyboardButton("✨ sᴜᴘᴘᴏʀᴛ ✨", url="https://t.me/TheNixaSupport"),
-                InlineKeyboardButton("🎓 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url=f"https://t.me/AnonDeveloper"),
+                InlineKeyboardButton("✨ sᴜᴘᴘᴏʀᴛ ✨", url="https://t.me/The_Caption_XD"),
+                InlineKeyboardButton("🎓 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url=f"https://t.me/lover_jerry"),
             ],
             [
                 InlineKeyboardButton("📚 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs 📚", callback_data="help_")
